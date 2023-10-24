@@ -10,8 +10,7 @@ kind: Deployment
   {{- end}}
   {{.Values.customBlock.author.name}}
   {{.Values.customBlock.author.email| default "Jesus"| nindent 2}}
-  {{.Values.customBlock.author.name| default "I am not null"| upper| nindent 4}}
-  {{.Values.customBlock.author.name| default "I am not null"| upper| quote| nindent 6}}
+  {{.Values.customBlock.author.name| default "I am Holy" | quote}}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:

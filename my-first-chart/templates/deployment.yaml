@@ -3,14 +3,6 @@ kind: Deployment
   {{- with .Values.customBlock.author.name}}
   {{- toYaml . }}
   {{- end}}
-  {{- if .Values.customBlock.author.email}}
-  {{"Jesus"}}
-  {{- else}}
-  {{"Hoy Jesus"}}
-  {{- end}}
-  {{.Values.customBlock.author.name}}
-  {{.Values.customBlock.author.email| default "Jesus"| nindent 2}}
-  {{.Values.customBlock.author.name| default "I am Holy" | quote}}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:

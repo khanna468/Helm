@@ -1,5 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
+  {{- with .Values.customBlock.author.name}}
+  {{- toYaml .}}
+  {{- end}}
   {{- if .Values.customBlock.author.email}}
   {{"Jesus"}}
   {{- else}}

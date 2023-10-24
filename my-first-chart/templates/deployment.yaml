@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
   {{.Values.customBlock.author.name}}
-  {{.Values.customBlock.author.email| default "Jesus"}}
-  {{.Values.customBlock.author.name| default "I am not null"| upper}}
-  {{.Values.customBlock.author.name| default "I am not null"| upper| quote}}
+  {{.Values.customBlock.author.email| default "Jesus"| nindent 2}}
+  {{.Values.customBlock.author.name| default "I am not null"| upper| nindent 4}}
+  {{.Values.customBlock.author.name| default "I am not null"| upper| quote| nindent 6}}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:

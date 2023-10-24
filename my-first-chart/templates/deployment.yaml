@@ -1,5 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
+  {{- if .Values.customBlock.author.email}}
+  {{"Jesus"}}
+  {{- else}}
+  {{"Hoy Jesus"}}
+  {{- end}}
   {{.Values.customBlock.author.name}}
   {{.Values.customBlock.author.email| default "Jesus"| nindent 2}}
   {{.Values.customBlock.author.name| default "I am not null"| upper| nindent 4}}

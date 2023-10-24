@@ -5,7 +5,7 @@ customBlock:
    author:
       name: "Rajesh"
       Address: "Bangalore"
-      email:
+      email: false
 replicaCount: 1
 
 image:

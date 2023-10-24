@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
-{{ $myvar:= "holy"}}
-{{- if true}}
+{{ $myvar:= true}}
+{{- if $myvar}}
 {{"$myvar"}}
 {{- else}}
 {{"Truely Jesus"}}

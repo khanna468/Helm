@@ -3,7 +3,7 @@ kind: Deployment
 {{ $myvar:= true}}
 {{- if $myvar}}
 {{ "Mighty jesus" }}
-{{ - else }}
+{{- else }}
 {{ "Truely Jesus" }}
 {{ - end }}
 {{- with .Values.customBlock.author.name}}

@@ -2,10 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 {{ $myvar:= true}}
 {{- if $myvar}}
-{{"Mighty jesus"}}
-{{- else}}
-{{"Truely Jesus"}}
-{{- end}}
+{{ "Mighty jesus" }}
+{{ - else }}
+{{ "Truely Jesus" }}
+{{ - end }}
 {{- with .Values.customBlock.author.name}}
 author:
 {{- toYaml . | nindent 2}}

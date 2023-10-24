@@ -1,7 +1,10 @@
 # Default values for my-first-chart.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
+customBlock:
+   author:
+      name: "Rajesh"
+      Address: "Bangalore"
 replicaCount: 1
 
 image:

@@ -1,5 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
+{{ $myvar:= "holy"}}
+{{- if true}}
+{{$myvar}}
+{{- else}}
+{{"Truely Jesus"}}
+{{- end}}
 {{- with .Values.customBlock.author.name}}
 author:
 {{- toYaml . | nindent 2}}

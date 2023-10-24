@@ -1,11 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
-
 {{- with .Values.customBlock.author.name}}
 author:
-{{- toYaml . }}
+{{- toYaml . | nindent 2}}
 {{- else}}
-{{"I am with no with block"}}
+{{"I am with no with block"| nindent 3}}
 {{- end }}
 
 metadata:
